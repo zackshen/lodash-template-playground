@@ -60,7 +60,7 @@ function App() {
   return (
     <div className="min-h-screen transition-colors duration-200 bg-muted dark:bg-background">
       <Header />
-      <div className="max-w-3xl mx-auto p-6">
+      <div className="max-w-7xl mx-auto p-6">
         <div className="flex justify-end mb-6 space-x-2">
           <button
             onClick={handleReset}
@@ -69,7 +69,7 @@ function App() {
             Reset
           </button>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-2 gap-8">
           <div className="flex flex-col space-y-8">
             <TemplateEditor value={template} onChange={setTemplate} />
             <VariableEditor value={variables} onChange={setVariables} />
